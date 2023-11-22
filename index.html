@@ -1,13 +1,73 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciando no JS</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Projeto com Funções em JavaScript</h1>
+    <div class="button-container">
+      <button onclick="limparResultado()">Resetar</button>
+    </div>
+    <div class="result">
+      <h2>Operações</h2>
+      <button onclick="mostrarIdade()">Nullish Coalescing Operator</button>
+      <button onclick="mostrarObjeto()">Objeto</button>
+      <div id="resultado">
+        Escolha uma página do menu para poder visualizar cada uma das operações separadamente
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function limparResultado() {
+      document.getElementById("resultado").innerText =
+        "Escolha uma página do menu para poder visualizar cada uma das operações separadamente";
+    }
+
+    function mostrarIdade() {
+      const idade1 = 27;
+      const idade2 = null;
+
+      const resultadoDiv = document.getElementById("resultado");
+
+      resultadoDiv.innerText = "Sua idade é: " + (idade1 || "Não informado");
+
+      // 0, '', [], false, undefined, null => falsy
+
+      resultadoDiv.innerText = "Sua idade é: " + (idade2 ?? "Não informado");
+
+      // mais restritivo então irá olhar para valores como
+      // null, undefined
+    }
+
+    function mostrarObjeto() {
+      // Objetos
+
+      const user = {
+        name: 'Diego',
+        idade: 27,
+        address: {
+          street: 'Rua teste',
+          number: 176
+        }
+      }
+
+      const resultadoDiv = document.getElementById("resultado");
+
+      resultadoDiv.innerText = ('name' in user)
+
+      resultadoDiv.innerText = Object.keys(user)
+
+      resultadoDiv.innerText = Object.values(user)
+    }
+  </script>
+</body>
+
 </html>
