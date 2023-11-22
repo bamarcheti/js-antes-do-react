@@ -1,13 +1,16 @@
 // Nullish Coalescing Operator
+function mostrarIdade() {
+  const idade1 = 27;
+  const idade2 = null;
 
-// const idade = 27
-const idade = null
+  const resultadoDiv = document.getElementById("resultado");
 
-document.body.innerText = "Sua idade é: " + (idade || 'Não informado');
+  resultadoDiv.innerText = "Sua idade é: " + (idade1 || "Não informado");
 
-// 0, '', [], false, undefined, null => falsy
+  // 0, '', [], false, undefined, null => falsy
 
-document.body.innerText = "Sua idade é: " + (idade ?? 'Não informado');
+  resultadoDiv.innerText = "Sua idade é: " + (idade2 ?? "Não informado");
 
-// mais restritivo então irá olhar para valores como
-// null, undefined
+  // mais restritivo então irá olhar para valores como
+  // null, undefined
+}
