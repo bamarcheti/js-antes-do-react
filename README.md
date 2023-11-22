@@ -11,7 +11,7 @@ projeto construido para o aprendizado mais avançado no JavaScript para começar
 **Para que esse projeto funcione corretamente é necessário seguir o passo a passo simplificado.**
 
 > - Instale os pacotes com `npm install`
-> - Execute `npm start` para iniciar o sistema
+> - Execute `npm run dev` para iniciar o sistema
 
 ## **💛 Contato**
 
