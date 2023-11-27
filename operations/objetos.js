@@ -16,7 +16,7 @@ function mostrarObjeto() {
 
   resultadoDiv.innerText = "name" in user;
 
-  resultadoDiv.innerText = Object.keys(user);
+  // resultadoDiv.innerText = Object.keys(user);
 
-  resultadoDiv.innerText = Object.values(user);
+  // resultadoDiv.innerText = Object.values(user);
 }
