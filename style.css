@@ -35,8 +35,20 @@ h2 {
   color: white;
 }
 
-h3 {
-  margin-top: 50px;
+#resultado {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #3c3c3c;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  font-family: monospace;
+}
+
+.result h2 {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #674fa3;
 }
 
 .button-container {

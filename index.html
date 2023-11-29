@@ -8,8 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iniciando no JS</title>
   <script src="reset.js" defer></script>
+  <script src="operations/objects/basicObjects.js" defer></script>
+  <script src="operations/objects/destructuredObject.js" defer></script>
+  <script src="operations/objects/restObjects.js" defer></script>
   <script src="operations/nullishCoalescing.js" defer></script>
-  <script src="operations/objetos.js" defer></script>
 </head>
 
 <body>
@@ -20,8 +22,10 @@
     </div>
     <div class="result">
       <h2>Operações</h2>
-      <button onclick="mostrarIdade()">Nullish Coalescing Operator</button>
-      <button onclick="mostrarObjeto()">Objeto</button>
+      <button onclick="mostrarIdade()">Operador de Coalescência Nulo</button>
+      <button onclick="mostrarObjeto()">Objetos Básicos</button>
+      <button onclick="mostrarObjetoDesestruturado()">Objetos Desestruturados</button>
+      <button onclick="mostrarRestObjects()">Operador Rest</button>
       <div>
         <h3 id="resultado">
           Escolha uma página do menu para poder visualizar cada uma das operações separadamente
