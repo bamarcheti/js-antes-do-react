@@ -5,11 +5,10 @@ function mostrarIdade() {
 
   const resultadoDiv = document.getElementById("resultado");
 
-  resultadoDiv.innerText =
-    "A idade 01 é: " +
-    (idade1 || "Não informado") +
-    " e a idade 02 é: " +
-    (idade2 ?? "Não informado");
+  resultadoDiv.innerText = `
+    A idade 01 é -> ${idade1 || "Não informado"} \n\n A idade 02 é -> ${
+    idade2 ?? "Não informado"
+  }`;
 
   // (idade1 || "Não informado")
   // 0, '', [], false, undefined, null => falsy
