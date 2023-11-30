@@ -70,3 +70,18 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
+@media only screen and (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #resultado {
+    white-space: pre-line;
+  }
+}
