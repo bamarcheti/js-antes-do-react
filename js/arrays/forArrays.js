@@ -1,6 +1,6 @@
 //  Método de Array For
 
-const array = [1, 2, 3, 4, 5];
+const array = [1, 4, 3, 2, 5, "teste"];
 
 function mostrarForArray() {
   const resultadoDiv = document.getElementById("resultado");
