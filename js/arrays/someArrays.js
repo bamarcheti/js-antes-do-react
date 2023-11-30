@@ -1,7 +1,9 @@
 //  Método de Array Some
 
+const array3 = [1, 4, 3, 2, 5, "teste"];
+
 function mostrarSomeArray() {
-  const peloMenosUmItemEUmNumero = array.some((item) => {
+  const peloMenosUmItemEUmNumero = array3.some((item) => {
     return typeof item !== "number";
   });
 
