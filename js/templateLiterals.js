@@ -1,6 +1,6 @@
 // Template Literals
 
-function mostraTemplateLiterals() {
+function mostrarTemplateLiterals() {
   const name = "Diego";
   const messagem = `Bem-vindo, ${name ?? "visitante"}`;
 
